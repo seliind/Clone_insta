@@ -1,0 +1,549 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!------------------------------------internal CSS----------------------------------------------------->
+    <style>
+        nav{
+            background-color: white;
+            height: 54px;
+        }
+        .nav-brand{
+            margin-left: 192px;
+        }
+        input.form.control{
+            background-color: #efefef;
+            border-style: none;
+        }
+        input.form-control:focus{
+            box-shadow: none;
+            border-style: none;
+            background-color: #efefef;
+            font-weight:500;
+        }
+        ::placeholder {
+      text-align: center;
+      font-size: 14px;
+      color: gray;
+      background-position: 10%;
+      background-size: 6%;
+      background-image: url(../assets/search-solid.svg);
+      background-repeat: no-repeat;
+    }
+
+    .container.middlearea {
+      max-height: 200px !important;
+    }
+
+    .poster {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-header {
+      background-color: white;
+    }
+
+    .card-footer {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+    .story-bar {
+      justify-content: space-around;
+
+    }
+    .userStorie {
+      text-align: center;
+      max-width: 60px!important;
+
+    }
+    </style>
+</head>
+
+<body style="padding-top: 85px;">
+    <!------------------------------------------navbar start------------------------------------------------->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light border">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" 
+            alt="kucuk-resim"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--------------->
+        </div>
+        <div class="collapse navbar-collapse mt-2 ml-5 d-none d-md-block">
+          <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
+            <input class="form-control mr-sm-2 empty d-flex ml-5" type="search" placeholder="Ara"
+              style="font-family: Arial, FontAwesome; height: 28px; width: 216px" aria-label="Search" />
+          </form>
+        </div>
+        <!--------------->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home fa-lg mr-2 d-none d-sm-block mt-1"></i>
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-messenger fa-lg mr-2 mt-1"
+                        style="color: black"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-compass fa-lg mr-2 mt-1" 
+                        style="color: black"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-heart fa-lg mr-2 mt-1" 
+                    style="color: black"></i></a></li>
+                    <li>
+                        <a class="nav-link" href="https://www.instagram.com/selindemirciogluu/" target="_blank"><img
+                            src="https://instagram.fesb3-1.fna.fbcdn.net/v/t51.2885-19/306382487_597682998717095_6452719551163867541_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fesb3-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=sZ3EMXaGmGsAX8QEhaF&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT_dJYFRQlqkqu5gIL7Us8hvpHquWjS4cPEFORMnjkKLGQ&oe=634BB9C7&_nc_sid=8fd12b" class="mb-2"
+                            style="width: 23px; height: 23px; border-radius: 50%;" /></a>
+                    </li>
+            </ul>
+        </div>
+        <!--------------->
+      </nav>
+      <!------------------------------------------navbar end--------------------------------------------------------->
+
+    <div calass="container middleera">
+        <div class="row">
+            <div class="col-7 offset-1">
+
+        <!--------------------------------------story bar start----------------------------------------------------->
+         <div class="card d-none d-lg-flex mb-4">
+            <div class="card-body d-flex story-bar">
+                <div class="userStorie">
+                    <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                      <img src="https://avatars.githubusercontent.com/u/30476529?s=200&v=4" class="storyphoto img-fluid" />
+                        <div class="storytext">kodluyoruz</div>
+                    </a>
+                </div>
+                  <div class="userStorie">
+                      <a href="#" style="text-decoration: none;" target="_blank">
+                        <img src="https://randomuser.me/api/portraits/women/56.jpg" class="storyphoto img-fluid" />
+                          <div class="storytext">jessevelyn</div>
+                      </a>
+                  </div>
+                  <div class="userStorie">    
+                    <a href="#" style="text-decoration: none;" target="_blank">
+                      <img src="https://randomuser.me/api/portraits/men/77.jpg" class="storyphoto img-fluid" />
+                        <div class="storytext">robertjohnson</div>
+                    </a>
+                  </div>
+                  <div class="userStorie">  
+                    <a href="#" style="text-decoration: none;" target="_blank">
+                      <img src="https://randomuser.me/api/portraits/women/50.jpg" class="storyphoto img-fluid" />
+                        <div class="storytext">kate_here</div>
+                    </a>
+                  </div>
+                  <div class="userStorie">  
+                    <a href="#" style="text-decoration: none;" target="_blank">
+                      <img src="https://randomuser.me/api/portraits/men/3.jpg" class="storyphoto img-fluid" />
+                        <div class="storytext mr-2">michealbrown</div>
+                    </a>
+                  </div>
+                  <div class="userStorie">
+                    <a href="#" style="text-decoration: none;" target="_blank">
+                      <img src="https://randomuser.me/api/portraits/women/28.jpg" class="storyphoto img-fluid" />
+                        <div class="storytext">monicageller</div>
+                    </a>
+                  </div>
+                  <div class="userStorie">  
+                    <a href="#" style="text-decoration: none;" target="_blank">
+                      <img src="https://randomuser.me/api/portraits/women/45.jpg" class="storyphoto img-fluid" />
+                        <div class="storytext">rachelbuffay</div>
+                    </a>
+                  </div>
+
+            </div>
+         </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------story bar end--------------------------------------------------------->
+    <!-------------------------------------posts start----------------------------------------------------------->
+    <div class="card d-flex mb-5">
+      <div class="card-header d-flex poster">
+        <div>
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIWFRISEhIYEhIYEhkfHRgYEh8SEhAlJSEnJyUhJCQpLjwzKSw4LSQkNDo0ODM1Nzc3KDFGSkg1PzxCNz0BDAwMEA8QGBARGDQdGSs0MTc/PzExMT8xPz8xNTE3ND86QDE/MT9APzVAMTo6ND8xMTExNDE0MTExMTExMTExMf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABQMEAgYHAQj/xABCEAABAwIDBQMJBgQFBQEAAAABAAIRAyEEEjEFIkFRYXGBoQYTFDKRsbLB8DNCUnPR4SMkYqI0RHKC8VRkdJLiB//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAQEAAgMAAgICAwAAAAAAAAABAhEhMUEDEgRRMnEiYYH/2gAMAwEAAhEDEQA/AOzIQhAU9r/YV/yX/CV8yvpmbEFfTO2P8PiPyanwlfNBeARe86RogKT2ESsWMMGOIVrENMn2lbJsTY4rUGQBldVGYTLgQ06cpHjCQa1s6izMHVA40xMwDy59sL1+GpueQx5NMGznCLcz3rfdq7Lw7KLS2m82AySd+IH+13WFq+FwrGvc2rTNNobMSHEZriJMxBQeibaLACwBrWENuA7NPXvtor+xtnG1R+nAR4rPB0Gmo/OM8QAY3SI1TPEVLQBYmIGrugU5VWOPqOoOAGYnhwWdPZ1R8AQB7QFm3MzK0AFxuZJi+id4PFZIbUpFs/eac7f1WdrSQuo+Tbfvvceyyjxnkw2JY8g8jvBbQx7SJaQR0Xjyg9RzDH7MqUzviRzCv+S5a+oKL6nm2uaQCdJmQFuWJwzXggiQkO0tiMALqYh4uI4qpl+05Yfp0LCYfI0DMXWGpt3JD5SFwfRy3Y52V4MkEQSbdij8jtumo00KhPnGtls6vHLtCZ06rH1XU3tFrtButGdad5ey1tGm37PM5zeA0Gg71pRaVvX/AOhva6tRpg+rTk9JNh4LSaxugVgGp15Guy47Bczi6A/vakhcnnkq3+ewHP0uh8bUJfTiEITAQhCAEIQgKe1vsK/5L/hK+c2Bolw1I1X0btT7Gt+U/wCEr51xDWgw3S8ygPGUGOa5wcA7JdkGT1nRMvJunUawVHuDafnGEeq4vyvAPGxE8tJWOHrtcH7rW2c4ho9XTRe4xxbhqZGVoc0EQd43drpwcNfap9V43PF4uk5lWmKhc8teMuhkmPeVzXbf2pLTumwAEQJgBSUMRU9YVHMaQbzra69wtHO8Oc4vawZpJJnjx6ovHJd8Mn1PNtDSZflBcSZOlvAeCsbKpvqloZadXETlHFS1tjNeA9weXOO8ZGXsHJbRsvZTaVMZbEiezos97bSa4a4wt845xl1Nj4AJ15/XVMm4ikd1ri22hP62SiqDlkcS4/3fsleJxRbBtJPyROTvBjicfVpP3JaeLZzNK2PZu0RWZMZXjUfotDxuJzsD89w6C3NeI1WxeTJeWMqcWucL2ziB8/cjKaLG7rYyFVxGhUNTa1Nri1xyuGoPvQMZTfOR4J5TcqVtUq4l1GuHsJaQ7MIPtH1zW17IxE1POE3yyIvmWq+UIaCPxXWy7EqRSpwIJpiTzWuPTDLtrvlIS7E1cxsIjoMohIK3HtTTHOL3VHk3c5K6g96C0wY0kgDUmF0PY2DpMxWBzCXelURm0ccuniGrQMMzM9jdJcBIXQPJ+p/PYQE2a9gE9Xtj3FUTuiEITIIQhACEIQFPa5/gV/yX/CV83teCd4R15r6Q2uP4GI/Jf8JXzQ6oAYKAabPgl7ebCqNRxLWsJkAkRyurWyyM7YMy13DS37qu/Ctaw1AZcalx+EAqfT8QhxAv6oED9k12fTLWMB9Z7wPaUqdSLnBua+cWiyducPSMLT4ecYf0U5XjS8Jztt1GluhkaQT0TJrRF+SqU6cZjM5iFcbopxXleWqbT2W5hfk36ZJIb99k8uYWpY7Al5tePDtXUMSwHVIcfs1jzJbJ5jdd7VN3LuNMdWarR8Jsd7nhtr+wdVvGHwRyMZTJp02NhpgZnnibqbCbIpshz3mDwLldxJaBYottnI+sl4czxNSoH13OaHltTKSRZtzB8FUo4yCSRryVvykYG4ioGmzoJHXilK1xxljnyysq1jcTnIMkwIut4wD6YoUzTdm/hj2gaLQKTCSGi5JATzZVKo1z4MMDbjVpOndxT64LvlSxLzqNDc9p4KpVmZTqrSLWzO64DUX7Umq3JSirwsbHp5qrLSACfBbXsGq30/C2LSMTQbM67wJHitZ2IcrnPNobAPamfk48+m4Ih3rY6jI4euB7k4ivpJCEKiCEIQAhCEBWxwBp1QdDTd7ivnDbuDpsqwMwaWyADMX/AGlfRm1CRRrkaik8j/1K+b6YdiXMbUdD8pIgQIn9kBd2BjWx5sG2blB7U0LmDBVwWSW1HXgdD81Ro7ObhxmDiSXM14X/AHUhx7Geew7wTnfMgAjTl7ErOlToqwAzYhhERlzdtlf9IY01KkTU84wNJE+bF7jrZS4EMz1ajWhoyiP6Onil7wd8xoNOB+rLLK8tcZw2vYG1KlV7Q9oa3LUsOOUtAPifYtlmAuf+SeLiuwEevTcJJmIvA9i3p77ICOs/mVHktPBV8Rg3PB3yzqFWq0qrQN8mO5Tbf02wxmXunuN2ZTfeoS8DRp0SDauPqNe2mxpAsLu0HPqmNTaBbZwuOf6qGo+nVMuaM3thRuNMvjuLXNpYRz943jQ5d7v5hJatIt1966BUpjLyIGq1Pbb2BwgDOTe3BaYZXpy54ztNsXZj4bWc2A6QyePM/XVP8SGU6Ra0bxIkz6xm5WtbNx1R72Z3lwa0gA6NTt9TPYrX/bL3Snimhzbm4uPruSCodT1KdY5sCwsRx7UnrMSirWw+TOAwz6T3VKjW1M5hheGk2EW9qf7B2VQZW2eA/M5uJpOcNZdI+a0OnhXFsgiCmnkrhnjG4E2/xdCb/wBbVSH0uhCEyCEIQAhCEBU2kCaVUCxNN8HlulcBwWHYAyo7M2ozM0jQOMmfeV3/AGg6KVU8qbz4FfPzsQXEm5JcegS0aapiHOc0HSRbhqq2NYPO1LE2Gh7UUy4mSbTz0XuOZme50iCO9L0eLWHpxTdaMxAVOuzcefxOt0TCiwNpgDqqm0Rla1qxyvLfCf4jybZNdnJrXeIC3qm8Gx1Wj7AqRWb1atuc86jVOU9L7mqjiWOMwpWYocdVFUxA5oy1Tx3CXGMcJDgCOxKqWGcHhzTDeITzFvF0qqYlrASTELP6tMvktmqkxuKDGkk2AWj4msXuc86k+xMMftEvdY7g/v6JWFvjjqObPLdX9ljf7k8w4MOIiY5pHgbEnon2AaMuY/i7lV6RJyixLN0A3EDhc6pLiBBjom9cEDXQ8tfr5pVWAvGpulDqbDGGgdE48mHfzmD/APLo/GEleIA17k08lnH03BD/ALuh8bVUqH0ihCEwEIQgBCEICptT7Gt+U/4SuCBgHBd72n9jW/Kf8JXAariAefJARVqoiDItzuVSfWcSIMGYgFW8NhX1i8MIERqDLrG/TQe1YYajUpPAc0ZpEGZGuvX5KcrqKxx3dHFKnDGA2sLJRjn5qgHAAn9E4xjwASUjZfzlQ8isPdujrh5hq2SrTdwkD2hbs19gVoGNBBHSFueza2ZjZ5BMMsU7joUpq49zTFym2I0KRYll0j6VMftR4aSNeq16viXv9ZxPTgru16lwwcFQYyQVrjJJthnbbp4GL1rLx0VnzVu5Y0mXJ6J7L6ruyqcuIImxWwspQyI1M9iR7NZvGwPbCeUnaAnsluXhx96XapwpYkbpvNzwSqszeAjinVdlr301MTZKaxl7YtfQcYQVTOaORsrnk0w+m4MjT0uj8bVQfU1jQJl5MknF4Ikf5ujx03wiUrH0UhCFogIQhACEIQFbHfZ1Py3e4riW12PY3zgc71jI0AnnMeE39q7bjY83UnTzbuzQrj2PZnYadwHkS4CCLAk2P4gUqqNcwW2X03luVpBFj6veTF1YqOBeyo8zUc4TB3Wj64JRQwtSSXyDAOUCC62to+uSmq1CHMcbbw+9nJ8FOXSse1/atTdgakquaeVgHW/sXtfee3ipcad367Fi2Kcfq3sPuWybEfLGGfurX8e2zXciFtOwMMRSbPG4TpTtNVBSvF0jBjVbAaF15Vw7QJPAJaPbn+OwZFzqoMPQ3Xyth2qwPMM5TMJQ8ZWkdFUy4K487YNZI/2KNjILuinwZkgdFk9kec7vrwTlTYywLody704aIsLRYjlJ0tpx4N04pGx8Ge9OadezTqImRo39O7JxsVWKayqNLrHTxS+tgHGCwg6wCYJ7OCZteDqY79O3Txjos3N537dfYmlrjm1GtILCOpCu+TId6dgpFvS6HxtTfzfLh9d/u6KxsbDTisI7j6TSJIt98cOKeiruiEIVJCEIQAhCEBWxsebqTpkdPsK4+XjPMA7wP3CR67jyK6/tD7KreP4b+ExYrjzWhzXAgA5XRPr3HEfiO8SBw4JVWJdjsLul0GRlDjBFmUwSTroYSJ9GCXuJc6Z1Liel79nHiVs1VoPnAQJLan3RxDOw6FIMdRNN7mRFNz35LEQMxBHP2STZSaSmZe3llHvXuNdLSOIHzBVXDPuOkBSVnWeeZ+QWXredPHsli2nZB/hNbMW1GoWs0HS1PNjVbZeSN6o1uHtOmWgAknqYMqHGvhpk/opWOI0Kr471QOZ5dE70WPZDUZBa/gZSrarABI4p/i2Q3S4ukeNlzSeEx2qJ2u9F+E9bvVqvo7/SqlEQT0HuU9V2vYR9exX6z8QkadWfJTbMxcDJUJg2aSfV6dPaFXpGcvYQs8DTD2uabmbfWvv7FURTd9D1cp4agwO428JPVYNxTm2eOEC0eFo8O9GBxLg4MeSSbB0ne4cNfbCuCiCH2tPd4W9pK0SKeJY7jaQNfn9d6a7AP8zhd6D6RT3Sb+uOC19+Aa4SOB1B077D3q75N0XtxeEAecvpVIx6zTvtnh4+KA78hCE0BCEIAQhCAq7QdFKqZiKbrnQWK4nVxTHOhgtFg7dc7mT+AH8R1ldq2mYo1jExSfbnulcCxDC2zgTpIi+aC5w4gn1RN+5Knib08UCRJkOm85M/Fxg2A3QJPDRK9vPY6mCyC8HMDly2Bc52ka5jAIFmyojxJIIiSfuuGgdebToXZncgsazZkHpMg5r6TN5PAm7oAgBCivZ9SQXf1e4KzTqSw/6vkllSoaZfTiL9ynwDnFjv9QM/hibrO43tcznS7hTqOhV/AYnI8HqPFVKOHN3G28AB2kQfrksGmC08DbwkfopuNnLTHKW6b1TqtgGQJ6qHGmw7/ctWDRD7kOLhHZAB+SvDGZAGuMiSdb3k8e1PW5wWW8crL4uVxmzRwELXQ/cDTqHO9+ibYbaMBwNMnWTMAa/t7VV9E3w8ObBbIsSGE6TISmNFzhWHRTLntyvBsQYzyQRI7JWT2zfm0fXvU2OoAgXIBgARGblbsKjAhrDy1Tymk43apRbbu/VZbJdvkcxpz+uwrxzfWGkSotnu3x16J4lkfVqQIvf6uZ/57furLD1YkOMxof8AmY7gpnEazaZ18e6Ne4KEMzEZL2+V7j696rekSbWg4AEuOsa6/wB0n2BMvJ2mfSMM4/8AUU9Zn1xz/QKnhMHl19ya7JcG4jCjniaY/vCm5b4X9dTddhQhC1YhCEIAQhCAq7R+yq3j+G+/4bG64TVY0gNBNpLQTB1k1H8gYtC7ltf7DETp5mp8JXz4zEU8ogtJInV5FtQQRHgR0SpxZFEWyuIEgtmzmiIL+ggQD1UA4CItoBpOsDW/Ljckws/PsiBDwT95wAf2i7nx1gdFReyoHvc7M4E3dB5XExa3TQoNV2xRENqCORjQ8RB4j60hTbKYchEWkEiPX0t4le7Vqg041Ln8ovqTHZlA0sFYwZAp0wR96ZGvMSl4PU9cBzZbBbw3huwOEFFGjyblFibHcEaXjmvRVORoBhs5QJB1lSF72ubukNc4i3Ic4A5DimqcXYc3K5pcLix7xb5KRjM4OZwEQLu/+u1Qkzl4g0xJBmOCt0a5k3jck31ievVZY8Wx0/PPtjj8s/qsDSbwIgyHRO7ax1XuGpmQSIE5SZgOIFtb6EKOkZLg6SHxIkSP7lYLGhlQEBoBBF7mOPDmOK1cqpiotTDt9ryYAlsdO2VWjdI6nu+pU1Rz87Xu3TB0GvUfXeqzzvlotmJj67lGU2rG6V6nPmP1VejSIc13BT1rS3i2fcmGysKHtDjrZROFd1cw1FzyDex1m6b0cOGhFJgaFXr4saC5Rbs5JE9eu1okmFBsSsX4vCHQDFUoGn3wlj3Fx35jVXfJ0D0rCX/zVLj/AFhPGepyy3w7yhCFsxCEIQAhCEBS2v8AYV9fsX6a+qV864NlR7w2kfNnOZzAOJ1nhoBFu1fRm0/sa35T/hK4fspgDy6IDW2U2nIzbsYtkmu+ObQGnSOXVXW4ZoYWgyI1Ny7qVYe3MI4e9AbDYHAR+iSnNse0+dcJJAcYk6DVPmOJaDAljBGbuJju6pbt6n/HcQPWIPZZTYPGGx4jMSOGgj3KqUMwwtaM0mCSDmMaT+Lqs6omM0S0usTLtG855yqLQS09HE+rM6j5LLEPcS8g7ocbcTujgewINKx77s1gER7vHoii643ssxqcs9NQsW1ZbUOpbkgGfdcKN/HKeFvYssuLK6vgv2xy+K+8z/i65xcJkw514zTA4+5RVKkb0iJiQIETYc1XZigAzkABz4dOqq06xcHNaM29N7Cx/dW5rwsHEy0cCBe+ok689Evq4oAFw1iANZ0WT2EN3o7O/wDZYYfDAEZjB68fqFRLGDoudJIJ9WfZH6raMJTYxsgRYdyr4WmGMkCLKvVxDiRxHgsrzeGk4nKxjK7i05dEuYx02NzwVx2Ia6xjTSZUB3Yve9k5NIyu0bKsm5ItFlf8mwDisJf/ADVL4wl4LeN5Mxmsmnk++n6Tgw2QfSqVv94hUTvKEIVoCEIQAhCEBU2n9jW/Kf8ACVxXZ7IbPEmV2raQmlVHOk/4SuMUhlJbyNlNVDCmVk8cVBTfeFK9wAJJgAJG0/yqpb7HgQcgtHrXKp4RhIBFiTYxr3p7i8XTqsc91PcaAJ++JJEg+xa/RqhrajI/qEHTgQq8JZfReA8yDldJtpc/KVmxrzDnAN1MCbmNEYVhynMZmONovx4qxTczrlaeY8LINXNM5XnMWkEGAHQb8bLxrRJcDMajpzv28kYh4ktABzA6RzMcFm3d3TcZH6DSSLQexTZuaV8eVxymU8RmnvgAA5p+voK09jWyQIc066kmJ7vBVWNLgwuEEX0iVcYyWhriASAbWGvXs5KcbuavjX8jGTL7Tq8keJr5rDgH9pgn67l4cRNMAEl5dHU9elivcSwZnuBsA4e9ZbMw8b7h2KsspIj4PivyZanRxhsfUytZUA01GvepHOJuIDRyUFOmTdSseRblosccueXb+R+NJjvHxi2efjovA0ns5oNRogGPbopWCLRui+i2echq0yfugx7Uz8maf81hDyxVL4wqlQgEngNCNUw8nf8AE4Of+ppfGEFp3dCEK0hCEIAQhCArY/7Kr+W/3FcXrWcDzC9QppxKDoVT27iw2k5oO8+w+aEIx7Vl0S0cSG0alM3DqdrTlMeCT0iAWzcEuB7whCvJJo1wgBrS2CANeXVetpVCTkfAjWQLShCk1kbP3mueCXQRcg8LnXqsXODXEBpc0NIDfW435/RXqEGhY0kEFpAgWPCfoKtiKwaA1u6Ra+hvMx7UIWU/lXTlz8WO1fD4UyXPMkuJTCm1CFjllbly9T4cJhhNLGeLBYOC9QkZbtBrACA45zc8Q4deyFjs3EvgsObLpMZmj9EIXTj1HifL/K/2aYd82Pq9iZbAL/S8IJsMVS1EyM4QhP1m72hCFaQhCEB//9k=" 
+          alt="pp" class="mr-2"
+          style="width: 35px; height: 35px; border-radius: 50%">
+          <span class="postuserfont"><strong><a href="https://www.instagram.com/selindemirciogluu/" target="_blank"
+            style="color: black;">selindemirc</a></strong></span>
+        </div>
+        <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+        </div>
+    </div>
+<div>
+    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" class="card-img-top" alt="..." />
+    <ul class="list-group list-group-horizontal mt-1" 
+    style="list-style-type: none; border-style:none; justify-content:space-between">
+     <div style="display:flex;">
+        <li class="nav-item">
+            <a href="#" class="nav-link"><i class="far fa-heart fa-lg"
+            style="color:black; position:relative; font-size:23px"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="far fa-comment fa-lg" style="color:black;
+            position:relative; font-size:23px; margin-left:-11px;"></i></a>  
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><i class="far fa-paper-plane fa-lg" style="color:black;
+                position:relative; font-size:23px;margin-left:-11px;"></i></a>
+        </li>
+        <span class="">
+            <li class="nav-item ml-4">
+                <a href="#" class="nav-link ml-2">
+                    <i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px"></i>
+                </a>
+            </li>
+        </span>
+     </div>
+      </ul>
+      <span>
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="1" class="mb-1 ml-3"
+        style="width:23px; height: 23px; border-radius:50%"/>
+        <span class="postuserfont"><strong>jadesmith</strong> ve <strong>83 diğer kişi</strong>beğendi
+      </span>
+      </span>
+      <div class="card-body" style="margin-top: -15px">
+        <p class="card-text postuserfont">
+        <strong style="margin-left: -4px; margin-right: 5px">selindemirc</strong>Burası Rize! Harika bir yer!
+        </p>
+        <a href="#" style="text-decoration: none;">
+        <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px;
+        color: rgb(139, 133, 133);">15 yorumun tümünü gör</p>
+        </a>
+        <p class="card-text postuserfont">
+            <strong style="margin-left: -4px;">jamesduncan</strong>Woww çok güzelmiş! Bizi de götür xd
+        </p>
+        <p class="card-text postuserfont" style="margin-top: -15px">
+        <strong style="margin-left: -4px; margin-right: 5px">williamgracia</strong>That's wonderful view hny! I
+        always want to travel Rize...</p>
+        <p class="card-text" style="margin-top: -10px;
+        margin-left: -4px;
+        font-size: 12px;
+        color: rgb(139, 133, 133);">2 SAAT ÖNCE</p>
+    </div>
+    <div>
+    <div class="card-footer" style="
+    color:rgb(139, 133, 133);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;">
+ <span style="margin-left: -4px;">Yorum Ekle...</span>    
+ <span class="" style="color:#0095f6; opacity: 50%;"><strong>Paylaş</strong></span>
+</div>
+</div>
+<div class="card mb-5">
+    <div class="card-header d-flex poster">
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/30476529?s=200&v=4" alt="2"
+            class="mr-2" style="width:35px; height:35px; border-radius:50%;">
+            <span class="postuserfont"><strong>Kodluyoruz</strong></span>
+        </div>
+        <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+    </div>
+    <img src="https://pbs.twimg.com/media/Erx2B2bXAAEy7gO.jpg" alt="3" class="card-img-top">
+    <ul class="list-group list-group-horizontal mt-1"
+    style="list-style-type: none; border-style: none; justify-content:space-between">
+    <div style="display: flex;">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                style="color: black; position: relative; font-size: 23px"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                color: black;
+                position: relative;
+                font-size: 23px;
+                margin-left: -11px;
+              "></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                color: black;
+                position: relative;
+                font-size: 23px;
+                margin-left: -11px;
+              "></i></a>
+        </li>
+        <span class="">
+            <li class="nav-item ml-4">
+              <a class="nav-link ml-2" href="#"></a>
+            </li>
+    </div>
+    <i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px"></i></a>
+    </ul>
+    <span>
+        <img src="https://randomuser.me/api/portraits/lego/1.jpg" class="mb-1 ml-3"
+          style="width: 23px; height: 23px; border-radius: 50%" />
+        <span class="postuserfont"><strong>thelegoperson</strong> ve
+          <strong>560 diğer kişi</strong> beğendi</span>
+      </span>
+      <div class="card-body" style="margin-top: -15px">
+        <p class="card-text postuserfont">
+          <strong style="margin-left: -4px; margin-right: 5px">kodluyoruz</strong>Barış Balta ile AWS Quick Start
+          Etkinliği #1 30 Ocak Cumartesi günü saat 10:00-15:30'da!
+        </p>
+        <a href="#" style="text-decoration: none">
+          <p class="card-text postuserfont" style="
+                margin-left: -4px;
+                margin-top: -14px;
+                color: rgb(139, 133, 133);
+              ">
+            78 yorumun tümünü gör
+          </p>
+        </a>
+        <p class="card-text postuserfont">
+          <strong style="margin-left: -4px; margin-right: 5px">paul123_</strong>Harika! Kesinlikle
+          katılacağım! :)
+        </p>
+        <p class="card-text postuserfont" style="margin-top: -15px">
+          <strong style="margin-left: -4px; margin-right: 5px">jordancloud</strong>Topluluk olarak heyecanlıyız!
+        </p>
+        <p class="card-text" style="
+              margin-top: -10px;
+              margin-left: -4px;
+              font-size: 12px;
+              color: rgb(139, 133, 133);
+            ">
+          10 SAAT ÖNCE
+        </p>
+      </div>
+      <div class="card-footer" style="
+            color: rgb(139, 133, 133);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+              'Helvetica Neue', sans-serif;
+            font-size: 14px;
+          ">
+        <span style="margin-left: -4px">Yorum Ekle...</span><span class=""
+          style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+      </div>
+    </div>
+    <div class="card mb-5">
+      <div class="card-header d-flex poster">
+        <div>
+          <img
+            src="https://randomuser.me/api/portraits/men/11.jpg"
+            class="mr-2" style="width: 35px; height: 35px; border-radius: 50%" />
+          <span class="postuserfont"><strong>williamgarcia</strong></span>
+        </div>
+        <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+      </div>
+      <img src="https://i.insider.com/5f1b201a5af6cc7e1b741330?width=1136&format=jpeg" class="card-img-top"
+        alt="..." />
+      <ul class="list-group list-group-horizontal mt-1"
+        style="list-style-type: none;  border-style: none;  justify-content:space-between">
+        <div style="display: flex;">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                style="color: black; position: relative; font-size: 23px"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                  color: black;
+                  position: relative;
+                  font-size: 23px;
+                  margin-left: -11px;
+                "></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                  color: black;
+                  position: relative;
+                  font-size: 23px;
+                  margin-left: -11px;
+                "></i></a>
+          </li>
+          <span class="">
+            <li class="nav-item ml-4">
+              <a class="nav-link ml-2" href="#">
+        </div>
+        <i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px"></i></a>
+        </li>
+        </span>
+      </ul>
+      <span>
+        <img
+          src="https://randomuser.me/api/portraits/lego/1.jpg"
+          class="mb-1 ml-3" style="width: 23px; height: 23px; border-radius: 50%" />
+        <span class="postuserfont"><strong>thelegoperson</strong> ve
+          <strong>787.272 diğer kişi</strong> beğendi</span>
+      </span>
+      <div class="card-body" style="margin-top: -15px">
+        <p class="card-text postuserfont">
+          <strong style="margin-left: -4px; margin-right: 5px">williamgarcia</strong>That's just beautiful!
+        </p>
+        <a href="#" style="text-decoration: none">
+          <p class="card-text postuserfont" style="
+                margin-left: -4px;
+                margin-top: -14px;
+                color: rgb(139, 133, 133);
+              ">
+            890 yorumun tümünü gör
+          </p>
+        </a>
+        <p class="card-text postuserfont">
+          <strong style="margin-left: -4px; margin-right: 5px">jackantanoff</strong>Yeah! Here you are!
+        </p>
+        <p class="card-text postuserfont" style="margin-top: -15px">
+          <strong style="margin-left: -4px; margin-right: 5px">spacexyz</strong>Really?? excellent
+        </p>
+        <p class="card-text" style="
+              margin-top: -10px;
+              margin-left: -4px;
+              font-size: 12px;
+              color: rgb(139, 133, 133);
+            ">
+          6 SAAT ÖNCE
+        </p>
+      </div>
+      <div class="card-footer" style="
+            color: rgb(139, 133, 133);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+              'Helvetica Neue', sans-serif;
+            font-size: 14px;
+          ">
+        <span style="margin-left: -4px">Yorum Ekle...</span><span class=""
+          style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+      </div>
+    </div>
+  </div>
+<!--------------------------------------------------------------posts end------------------------------------------------------>
+<!------------------------------------------------------------right bar start---------------------------------------------------->
+  <div class="col-3 d-none d-md-block">
+
+      <div class="card rightpanel" id="sticky-sidebar" style="width: 18rem">
+        <div class="card-body">
+          <div>
+            <a class="nav-link" href="#">
+              <span>
+                <img src="https://randomuser.me/api/portraits/lego/1.jpg" class="" style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 2px solid rgb(238, 39, 82);
+                    margin-left: -15px;
+                  " /><span class="" style="
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                    font-size: 15px;
+                    color: black;
+                    margin-left: 20px;
+                  "><strong>thelegoperson</strong>
+                </span>
+              </span>
+            </a>
+            <div class="mt-2" style="align-items: flex-end;
+              justify-content: space-around;
+              display: flex;
+              height: 20px;">
+              <span class="mt-5" style="
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                      sans-serif;
+                    font-size: 15px;
+                    color: gray;
+                  ">Senin İçin Öneriler</span>
+              <span class="postuserfont mt-1" style="font-size: 12px"><strong>Tümünü Gör</strong></span>
+            </div>
+            <div class="mt-2 ml-2">
+              <div style="display: flex;
+                justify-content: space-between;">
+                <div>
+                  <span><img src="https://randomuser.me/api/portraits/men/30.jpg"
+                      style="width: 30px; height: 30px; border-radius: 50%" />
+                  </span>
+                  <a href="https://www.instagram.com/kablosuzbeyin" target="_blank">
+                    <span class="postuserfont mt-1 ml-2"><strong>richardmiller</strong></span>
+                </div>
+                <div>
+                  <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                      Et</strong></span>
+                </div>
+                </a>
+              </div>
+              <div class="mt-3 mb-3;" style="display: flex;
+                justify-content: space-between;">
+                <div>
+                  <span><img src="https://randomuser.me/api/portraits/men/37.jpg"
+                      style="width: 30px; height: 30px; border-radius: 50%" />
+                  </span>
+                  <a href="https://www.instagram.com/codecraftcom" target="_blank">
+                    <span class="postuserfont ml-2"><strong>josephdavis </strong></span></a>
+                </div>
+                <div>
+                  <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                      Et</strong></span>
+                </div>
+              </div>
+
+
+
+              <div class="mt-3" style="display: flex;
+                justify-content: space-between;">
+                <div>
+                  <span><img src="https://randomuser.me/api/portraits/men/8.jpg"
+                      style="width: 30px; height: 30px; border-radius: 50%" />
+                  </span>
+                  <a href="https://www.instagram.com/navlungotr" target="_blank">
+                    <spans class="postuserfont ml-2 mt-1"><strong>thomasrodriguez</strong></spans>
+                </div>
+                <div>
+                  <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                      Et</strong></span>
+                </div>
+                </a>
+              </div>
+              <div class="mt-3" style="display: flex;
+                justify-content: space-between;">
+                <div>
+                  <span><img src="https://randomuser.me/api/portraits/men/34.jpg"
+                      style="width: 30px; height: 30px; border-radius: 50%" />
+                  </span>
+                  <a href="https://www.instagram.com/podfreshco" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"><strong>charlesmartinez</strong></span>
+                </div>
+                <div>
+                  <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                      Et</strong></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="ml-2 mt-2"
+              style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              <span><a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a> <a
+                  href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a> <a
+                  href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a> <a
+                  href="https://www.instagram.com/developer/" class="rightpanellinks">API</a> <a
+                  href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş Fırsatları</a> <a
+                  href="https://www.instagram.com/legal/privacy/" class="rightpanellinks">Gizlilik</a></span>
+              <span><a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a> <a
+                  href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a> <a
+                  href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca Hesaplar</a> <a
+                  href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu Etiketleri</a>
+                Dil</span>
+              <p></p>
+              <p style="font-size: 12px;">© 2021 INSTAGRAM FROM KODLUYORUZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>   
+</body>
+</html>
